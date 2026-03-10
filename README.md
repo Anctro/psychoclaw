@@ -1,6 +1,13 @@
 # 🧠 PsychoClaw
 OpenClaw 专业心理健康测评工具套件
 
+## ⚡ 一键安装
+直接在 OpenClaw 中执行以下命令即可安装整套 PsychoClaw 技能：
+```bash
+# 安装完整套件（两个技能）
+openclaw skill install https://github.com/Anctro/psychoclaw.git
+```
+
 ## 项目介绍
 PsychoClaw 是专为 OpenClaw 打造的心理健康测评 Skill 套件，包含**量表构建工具**和**对话式测评服务**两大核心功能，内置4个国际公认的标准化心理量表，支持快速生成符合临床规范的量表数据源，以及开箱即用的对话式心理健康筛查服务。
 
