@@ -74,44 +74,51 @@ psychoclaw/
 ```
 
 ## 🚀 快速开始
-### 环境要求
-- Python 3.8+
-- OpenClaw 运行环境
+### 安装
+直接在 OpenClaw 中执行一键安装命令即可安装整套技能：
+```bash
+openclaw skill install https://github.com/Anctro/psychoclaw.git
+```
+安装完成后可通过 `openclaw skill list` 查看已安装的三个技能。
 
-### 量表构建工具使用
-1. 准备纯文本格式的量表内容
-2. 转换为标准JSON：
-```bash
-python3 psychological-scale-builder/scripts/scale-converter.py input.txt output.json
-```
-3. 校验量表结构：
-```bash
-python3 psychological-scale-builder/scripts/scale-validator.py output.json
-```
+---
+### 使用方法
+所有技能均支持直接通过 OpenClaw 命令调用，无需关注底层实现：
 
-### 对话式测评服务使用
-1. 启动测评流程：
+#### 1. 🛠️ 心理量表构建工具
+**功能**：将纯文本量表转换为标准JSON格式
+**使用场景**：制作新的心理测评量表、标准化现有量表
 ```bash
-python3 psychological-assessment/scripts/assessment-flow.py
-```
-2. 查看历史测评记录：
-```bash
-python3 psychological-assessment/scripts/record-manager.py list
-```
-3. 查看测评统计信息：
-```bash
-python3 psychological-assessment/scripts/record-manager.py stat
+# 转换文本量表为标准JSON
+openclaw skill run psychological-scale-builder convert <input.txt> <output.json>
+
+# 校验量表结构是否符合规范
+openclaw skill run psychological-scale-builder validate <scale.json>
 ```
 
-### 智能心理状态评估使用
-无需答题，直接运行即可基于已有数据生成评估报告：
+#### 2. 📊 对话式心理健康测评
+**功能**：通过自然对话完成心理测评，无需手动填写问卷
+**使用场景**：用户需要进行抑郁/焦虑/压力/睡眠测评
 ```bash
-python3 psychological-intelligent-assessment/scripts/intelligent-analyzer.py
+# 启动对话式测评
+openclaw skill run psychological-assessment
+
+# 查看历史测评记录
+openclaw skill run psychological-assessment records
+
+# 查看测评统计信息
+openclaw skill run psychological-assessment stat
 ```
-也可以传入会话历史文件进行更精准的分析：
+也可以直接在对话中触发：用户说「我要做心理测评」、「测一下我的压力」等即可自动启动。
+
+#### 3. 🧠 智能心理状态评估
+**功能**：无需答题，基于用户历史数据自动分析心理状态
+**使用场景**：用户说「评估一下我现在的心理状态」、「分析我的心理情况」
 ```bash
-python3 psychological-intelligent-assessment/scripts/intelligent-analyzer.py conversation.txt
+# 生成智能评估报告
+openclaw skill run psychological-intelligent-assessment
 ```
+无需用户输入任何内容，系统会自动读取历史测评记录、用户特征、会话历史进行综合分析，直接输出评估报告。
 
 ## ⚠️ 重要声明
 1. 本工具仅用于心理健康自我筛查，**绝对不能替代专业的临床医学诊断**
