@@ -13,7 +13,7 @@ SCALES = {
     "phq9": "抑郁状态测评（PHQ-9）",
     "gad7": "焦虑状态测评（GAD-7）",
     "pss10": "压力水平评估（PSS-10）",
-    "psqi": "睡眠质量评估（PSQI")
+    "psqi": "睡眠质量评估（PSQI）"
 }
 
 def load_scale(scale_key):
@@ -128,7 +128,7 @@ def main():
     for question in scale["questions"]:
         print(f"\n{question['questionNo']}. {question['questionStem']}")
         for opt in question["options"]:
-            print(f"  {opt['optionId']}. {opt['optionText']} ({opt['score']}分)")
+            print(f"  {opt['optionId']}. {opt['optionText']}")
         
         while True:
             ans = input("> ").strip().upper()
