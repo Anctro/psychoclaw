@@ -38,6 +38,14 @@ PsychoClaw 是专为 OpenClaw 打造的心理健康测评 Skill 套件，包含*
 - **个性化建议**：基于用户实际情况给出可落地的改善建议
 - **风险预警**：自动检测高风险信号，提示用户寻求专业帮助
 
+### 4. 📋 问卷星快速导入工具 (`questionnaire-star-importer`)
+- **双格式支持**：同时生成问卷星「文本快速导入」和「Excel快速导入」两种格式，无需手动调整
+- **多输入支持**：支持纯文本、Markdown、心理量表JSON等多种输入格式
+- **题型自动识别**：自动识别单选、多选、量表、填空等常见题型，支持自定义题型映射
+- **心理量表适配**：支持直接将PsychoClaw的心理量表JSON一键转换为问卷星格式
+- **格式自动校验**：自动检查是否符合问卷星导入规范，不符合时给出修正建议
+- **批量处理**：支持一次性转换多个问卷/量表，批量生成导入文件
+
 ## 📁 目录结构
 ```
 psychoclaw/
@@ -70,6 +78,17 @@ psychoclaw/
 │   │   └── intelligent-analyzer.py     # 智能分析脚本
 │   └── references/
 │       └── analysis-framework.md       # 心理学分析框架（专家版）
+├── questionnaire-star-importer/        # 问卷星快速导入工具
+│   ├── SKILL.md                        # 技能说明文档
+│   ├── scripts/
+│   │   ├── txt-converter.py            # 转换为问卷星文本导入格式
+│   │   ├── excel-converter.py          # 转换为问卷星Excel导入格式
+│   │   └── scale-converter.py          # 心理量表JSON转问卷星格式专用脚本
+│   ├── references/
+│   │   ├── format-spec.md              # 问卷星导入格式官方规范
+│   │   └── question-type-mapping.md    # 题型映射规则说明
+│   └── assets/
+│       └── text-template.txt           # 文本导入格式模板
 └── README.md                           # 项目说明文档
 ```
 
