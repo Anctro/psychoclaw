@@ -1,0 +1,30 @@
+{
+  "scaleId": "phq-9-depression-screening",
+  "scaleName": "PHQ-9 抑郁症筛查量表",
+  "scaleIntro": "PHQ-9是国际通用的简明抑郁症状自我评定量表，用于评估过去两周内的抑郁症状及其严重程度。完成时间约3分钟。⚠️ 本量表仅用于自我筛查，不能替代专业诊断，如第9题得分≥1请立即寻求专业帮助。",
+  "questionCount": 9,
+  "questions": [
+    {"questionId":"q1","questionNo":1,"questionStem":"做事提不起劲或没有兴趣","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q2","questionNo":2,"questionStem":"感到心情低落、沮丧或绝望","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q3","questionNo":3,"questionStem":"入睡困难、睡不安稳或睡眠过多","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q4","questionNo":4,"questionStem":"感觉疲倦或没有活力","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q5","questionNo":5,"questionStem":"食欲不振或吃得太多","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q6","questionNo":6,"questionStem":"觉得自己很糟，或觉得自己是个失败者，让家人失望","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q7","questionNo":7,"questionStem":"对事物注意力不集中，如阅读报纸或看电视时","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q8","questionNo":8,"questionStem":"动作或说话迟缓到别人都能察觉；或正好相反，烦躁不安、动来动去","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q9","questionNo":9,"questionStem":"有不如死掉或用某种方式伤害自己的念头","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]}
+  ],
+  "scoringRule": {
+    "scoringType": "sum",
+    "totalScoreRange": [0, 27],
+    "reverseQuestions": [],
+    "dimensions": []
+  },
+  "resultInterpretation": [
+    {"scoreRange":[0,4],"level":"正常","resultDesc":"没有或极轻度抑郁","resultMeaning":"你的心理状态良好，没有明显抑郁情绪","suggestions":["保持规律作息和健康生活习惯","每周保持3次以上有氧运动","多和家人朋友交流"]},
+    {"scoreRange":[5,9],"level":"轻度","resultDesc":"轻度抑郁","resultMeaning":"存在轻微抑郁情绪，可能与近期生活事件有关，对生活影响不大","suggestions":["调整生活节奏，避免过度劳累","增加户外运动时间","向亲友倾诉释放情绪"]},
+    {"scoreRange":[10,14],"level":"中度","resultDesc":"中度抑郁","resultMeaning":"抑郁情绪已经影响到生活质量和日常功能，承受着一定心理痛苦","suggestions":["寻求专业心理咨询师帮助，进行认知行为疗法","规律运动，每天至少30分钟","记录情绪变化，观察触发因素"]},
+    {"scoreRange":[15,19],"level":"中重度","resultDesc":"中重度抑郁","resultMeaning":"抑郁症状较为明显，心理痛苦程度较高，日常功能受损明显","suggestions":["立即前往正规医院精神心理科就诊","遵医嘱进行治疗，结合药物和心理干预","在家人陪伴下进行日常活动"]},
+    {"scoreRange":[20,27],"level":"重度","resultDesc":"重度抑郁","resultMeaning":"抑郁症状非常严重，严重影响工作、生活和社交功能，存在较高风险","suggestions":["立即寻求精神科医生专业诊断和治疗","24小时有人陪护，避免独处","严格遵医嘱服药和定期复诊"]}
+  ]
+}
