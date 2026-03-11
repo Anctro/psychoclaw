@@ -1,0 +1,27 @@
+{
+  "scaleId": "gad-7-generalized-anxiety-disorder",
+  "scaleName": "GAD-7 广泛性焦虑障碍量表",
+  "scaleIntro": "GAD-7是国际通用的焦虑症状筛查工具，用于评估过去两周内的焦虑症状及其严重程度。完成时间约2分钟。⚠️ 本量表仅用于自我筛查，不能替代专业诊断。",
+  "questionCount": 7,
+  "questions": [
+    {"questionId":"q1","questionNo":1,"questionStem":"感觉紧张、焦虑或急躁","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q2","questionNo":2,"questionStem":"不能停止或无法控制担忧","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q3","questionNo":3,"questionStem":"对各种各样的事情担忧过多","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q4","questionNo":4,"questionStem":"很难放松下来","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q5","questionNo":5,"questionStem":"由于不安而无法静坐","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q6","questionNo":6,"questionStem":"变得容易烦恼或急躁","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]},
+    {"questionId":"q7","questionNo":7,"questionStem":"感到似乎将有可怕的事情发生而害怕","options":[{"optionId":"A","optionText":"完全没有","score":0},{"optionId":"B","optionText":"有几天","score":1},{"optionId":"C","optionText":"一半以上天数","score":2},{"optionId":"D","optionText":"几乎每天","score":3}]}
+  ],
+  "scoringRule": {
+    "scoringType": "sum",
+    "totalScoreRange": [0, 21],
+    "reverseQuestions": [],
+    "dimensions": []
+  },
+  "resultInterpretation": [
+    {"scoreRange":[0,4],"level":"正常","resultDesc":"没有焦虑","resultMeaning":"心理状态平稳，没有明显焦虑症状","suggestions":["保持健康的生活节奏","定期进行放松练习","维持良好的社交关系"]},
+    {"scoreRange":[5,9],"level":"轻度","resultDesc":"轻度焦虑","resultMeaning":"存在一定焦虑感，属于常见压力反应，对生活影响不大","suggestions":["练习4-7-8呼吸法、正念冥想等放松技巧","适当减少工作/学习负荷","保证充足睡眠"]},
+    {"scoreRange":[10,14],"level":"中度","resultDesc":"中度焦虑","resultMeaning":"焦虑情绪较重，可能伴随身体紧绷感或睡眠问题，日常功能受到一定影响","suggestions":["寻求专业心理咨询帮助，探讨焦虑根源","每周进行3次以上有氧运动，每次30分钟以上","避免摄入咖啡、酒精等刺激性物质"]},
+    {"scoreRange":[15,21],"level":"重度","resultDesc":"重度焦虑","resultMeaning":"极度焦虑，严重干扰正常思考和生活节奏，可能出现惊恐发作等症状","suggestions":["立即前往精神心理科就诊，进行全面评估","遵医嘱进行治疗，必要时结合药物干预","学习渐进式肌肉放松等情绪调节技巧"]}
+  ]
+}

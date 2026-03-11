@@ -1,0 +1,73 @@
+{
+  "scaleId": "scale-id-here",
+  "scaleName": "量表名称",
+  "scaleIntro": "量表介绍，包括适用人群、完成时长、注意事项等",
+  "questionCount": 20,
+  "questions": [
+    {
+      "questionId": "q1",
+      "questionNo": 1,
+      "questionStem": "题干内容",
+      "options": [
+        {
+          "optionId": "A",
+          "optionText": "选项A内容",
+          "score": 1
+        },
+        {
+          "optionId": "B",
+          "optionText": "选项B内容",
+          "score": 2
+        },
+        {
+          "optionId": "C",
+          "optionText": "选项C内容",
+          "score": 3
+        },
+        {
+          "optionId": "D",
+          "optionText": "选项D内容",
+          "score": 4
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "scoringType": "sum|reverse|dimension",
+    "totalScoreRange": [20, 80],
+    "reverseQuestions": ["q1", "q3", "q5"],
+    "dimensions": [
+      {
+        "dimensionId": "dimension-1",
+        "dimensionName": "维度名称",
+        "dimensionDesc": "维度描述",
+        "questionIds": ["q1", "q2", "q3", "q4", "q5"],
+        "scoreRange": [5, 20]
+      }
+    ]
+  },
+  "resultInterpretation": [
+    {
+      "scoreRange": [20, 39],
+      "level": "正常",
+      "resultDesc": "无明显焦虑症状",
+      "resultMeaning": "你的心理状态良好，没有明显的焦虑情绪",
+      "suggestions": [
+        "保持良好的作息习惯",
+        "定期进行运动",
+        "保持积极的心态"
+      ]
+    },
+    {
+      "scoreRange": [40, 49],
+      "level": "轻度",
+      "resultDesc": "存在轻微焦虑症状",
+      "resultMeaning": "你可能偶尔会感到焦虑，但对正常生活影响不大",
+      "suggestions": [
+        "尝试通过深呼吸、冥想等方式缓解焦虑",
+        "适当调整工作和生活节奏",
+        "多和朋友家人沟通交流"
+      ]
+    }
+  ]
+}

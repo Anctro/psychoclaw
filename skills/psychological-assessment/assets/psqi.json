@@ -1,0 +1,27 @@
+{
+  "scaleId": "psqi-pittsburgh-sleep-quality-index",
+  "scaleName": "PSQI 匹兹堡睡眠质量指数",
+  "scaleIntro": "PSQI是国际通用的睡眠质量评估工具，用于评估过去一个月的睡眠质量。完成时间约3分钟。⚠️ 本量表仅用于自我筛查，不能替代专业睡眠医学诊断。",
+  "questionCount": 7,
+  "questions": [
+    {"questionId":"q1","questionNo":1,"questionStem":"你对自己过去一个月的总体睡眠质量评价如何？","options":[{"optionId":"A","optionText":"很好","score":0},{"optionId":"B","optionText":"较好","score":1},{"optionId":"C","optionText":"较差","score":2},{"optionId":"D","optionText":"很差","score":3}]},
+    {"questionId":"q2","questionNo":2,"questionStem":"你通常上床后需要多长时间才能入睡？","options":[{"optionId":"A","optionText":"≤15分钟","score":0},{"optionId":"B","optionText":"16-30分钟","score":1},{"optionId":"C","optionText":"31-60分钟","score":2},{"optionId":"D","optionText":">60分钟","score":3}]},
+    {"questionId":"q3","questionNo":3,"questionStem":"你每晚实际能睡多少个小时？","options":[{"optionId":"A","optionText":"≥7小时","score":0},{"optionId":"B","optionText":"6-6.9小时","score":1},{"optionId":"C","optionText":"5-5.9小时","score":2},{"optionId":"D","optionText":"<5小时","score":3}]},
+    {"questionId":"q4","questionNo":4,"questionStem":"你的睡眠效率如何？（实际睡眠时间 ÷ 躺在床上的总时间 × 100%）","options":[{"optionId":"A","optionText":"≥85%","score":0},{"optionId":"B","optionText":"75%-84%","score":1},{"optionId":"C","optionText":"65%-74%","score":2},{"optionId":"D","optionText":"<65%","score":3}]},
+    {"questionId":"q5","questionNo":5,"questionStem":"过去一个月里，你因为夜间易醒、早醒、上厕所、呼吸不畅、做噩梦、感觉疼痛等原因影响睡眠的频率如何？","options":[{"optionId":"A","optionText":"没有","score":0},{"optionId":"B","optionText":"每周<1次","score":1},{"optionId":"C","optionText":"每周1-2次","score":2},{"optionId":"D","optionText":"每周≥3次","score":3}]},
+    {"questionId":"q6","questionNo":6,"questionStem":"过去一个月里，你使用药物助眠的频率如何？","options":[{"optionId":"A","optionText":"没有","score":0},{"optionId":"B","optionText":"每周<1次","score":1},{"optionId":"C","optionText":"每周1-2次","score":2},{"optionId":"D","optionText":"每周≥3次","score":3}]},
+    {"questionId":"q7","questionNo":7,"questionStem":"过去一个月里，你在白天打瞌睡、感到精力不足的频率如何？","options":[{"optionId":"A","optionText":"没有","score":0},{"optionId":"B","optionText":"每周<1次","score":1},{"optionId":"C","optionText":"每周1-2次","score":2},{"optionId":"D","optionText":"每周≥3次","score":3}]}
+  ],
+  "scoringRule": {
+    "scoringType": "sum",
+    "totalScoreRange": [0, 21],
+    "reverseQuestions": [],
+    "dimensions": []
+  },
+  "resultInterpretation": [
+    {"scoreRange":[0,5],"level":"正常","resultDesc":"睡眠质量很好","resultMeaning":"你的睡眠质量非常好，睡眠充足且规律，能够很好地恢复精力","suggestions":["继续保持良好的睡眠习惯","保持固定的作息时间，即使周末也不要熬夜","睡前1小时避免使用电子设备"]},
+    {"scoreRange":[6,10],"level":"轻度","resultDesc":"睡眠质量一般/轻度问题","resultMeaning":"存在轻微的睡眠困扰，可能入睡稍慢或偶尔早醒，对白天精力影响不大","suggestions":["建立规律的睡眠作息，每天固定上床和起床时间","睡前避免摄入咖啡因、酒精等刺激性物质","睡前可以泡脚、听轻音乐帮助放松"]},
+    {"scoreRange":[11,15],"level":"中度","resultDesc":"睡眠质量较差","resultMeaning":"睡眠问题明显，可能存在失眠、多梦等情况，白天精力已经受到明显影响","suggestions":["尝试睡眠卫生习惯调整，如卧室保持黑暗、安静、温度适宜","如果是压力或情绪导致的失眠，可以尝试睡前写下来清空大脑","建议寻求专业心理咨询帮助，改善睡眠问题"]},
+    {"scoreRange":[16,21],"level":"重度","resultDesc":"睡眠质量极差","resultMeaning":"存在严重的睡眠障碍，极大影响身心健康和日常功能，需要及时干预","suggestions":["立即就诊睡眠医学科或精神心理科，进行全面评估","在医生指导下进行治疗，必要时使用助眠药物","可以结合认知行为疗法（CBT-I）改善睡眠问题"]}
+  ]
+}

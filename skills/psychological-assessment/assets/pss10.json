@@ -1,0 +1,29 @@
+{
+  "scaleId": "pss-10-perceived-stress-scale",
+  "scaleName": "PSS-10 压力知觉量表",
+  "scaleIntro": "PSS-10是国际通用的压力感知评估工具，用于测量过去一个月内感受到的压力程度，评估生活的不可预测、不可控制和负担过重感。完成时间约3分钟。",
+  "questionCount": 10,
+  "questions": [
+    {"questionId":"q1","questionNo":1,"questionStem":"因遭遇意料之外的事情而感到心烦意乱","options":[{"optionId":"A","optionText":"从不","score":0},{"optionId":"B","optionText":"偶尔","score":1},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":3},{"optionId":"E","optionText":"总是","score":4}]},
+    {"questionId":"q2","questionNo":2,"questionStem":"感觉无法控制生活中重要的事情","options":[{"optionId":"A","optionText":"从不","score":0},{"optionId":"B","optionText":"偶尔","score":1},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":3},{"optionId":"E","optionText":"总是","score":4}]},
+    {"questionId":"q3","questionNo":3,"questionStem":"感到紧张不安和有压力","options":[{"optionId":"A","optionText":"从不","score":0},{"optionId":"B","optionText":"偶尔","score":1},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":3},{"optionId":"E","optionText":"总是","score":4}]},
+    {"questionId":"q4","questionNo":4,"questionStem":"觉得有信心成功处理自己的个人烦恼","options":[{"optionId":"A","optionText":"从不","score":4},{"optionId":"B","optionText":"偶尔","score":3},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":1},{"optionId":"E","optionText":"总是","score":0}]},
+    {"questionId":"q5","questionNo":5,"questionStem":"觉得事情正按照自己的意愿发展","options":[{"optionId":"A","optionText":"从不","score":4},{"optionId":"B","optionText":"偶尔","score":3},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":1},{"optionId":"E","optionText":"总是","score":0}]},
+    {"questionId":"q6","questionNo":6,"questionStem":"觉得无法处理自己必须做的事情","options":[{"optionId":"A","optionText":"从不","score":0},{"optionId":"B","optionText":"偶尔","score":1},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":3},{"optionId":"E","optionText":"总是","score":4}]},
+    {"questionId":"q7","questionNo":7,"questionStem":"能够控制生活中的烦恼","options":[{"optionId":"A","optionText":"从不","score":4},{"optionId":"B","optionText":"偶尔","score":3},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":1},{"optionId":"E","optionText":"总是","score":0}]},
+    {"questionId":"q8","questionNo":8,"questionStem":"觉得自己能够掌控一切","options":[{"optionId":"A","optionText":"从不","score":4},{"optionId":"B","optionText":"偶尔","score":3},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":1},{"optionId":"E","optionText":"总是","score":0}]},
+    {"questionId":"q9","questionNo":9,"questionStem":"因为事情超出了自己的控制范围而生气","options":[{"optionId":"A","optionText":"从不","score":0},{"optionId":"B","optionText":"偶尔","score":1},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":3},{"optionId":"E","optionText":"总是","score":4}]},
+    {"questionId":"q10","questionNo":10,"questionStem":"感觉困难堆积如山，自己无法克服","options":[{"optionId":"A","optionText":"从不","score":0},{"optionId":"B","optionText":"偶尔","score":1},{"optionId":"C","optionText":"有时","score":2},{"optionId":"D","optionText":"经常","score":3},{"optionId":"E","optionText":"总是","score":4}]}
+  ],
+  "scoringRule": {
+    "scoringType": "reverse",
+    "totalScoreRange": [0, 40],
+    "reverseQuestions": ["q4", "q5", "q7", "q8"],
+    "dimensions": []
+  },
+  "resultInterpretation": [
+    {"scoreRange":[0,13],"level":"正常","resultDesc":"压力较低","resultMeaning":"你处于相对轻松的状态，能够较好地应对目前的日常挑战","suggestions":["保持当前的生活和工作节奏","继续维持良好的压力调节习惯","定期复盘调整状态"]},
+    {"scoreRange":[14,26],"level":"轻度","resultDesc":"中等压力","resultMeaning":"处于中等压力水平，生活中有一定挑战，偶尔会感到吃力，但多数时候能够应付","suggestions":["学会精力管理，区分可控和不可控的事情","适当安排放松和休息时间，避免持续高压","向亲友或同事寻求支持，分担压力"]},
+    {"scoreRange":[27,40],"level":"重度","resultDesc":"压力较高","resultMeaning":"你感受到了显著的压力，生活可能让你感到失控和不堪重负，身心健康已经受到影响","suggestions":["立即审视目前的学业/工作负荷，适当减负","学会拒绝不合理的要求，优先照顾自己的身心健康","寻求专业心理咨询帮助，学习压力管理技巧","如果压力持续无法缓解，建议前往医院就诊"]}
+  ]
+}
